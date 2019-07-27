@@ -5,7 +5,7 @@
 # ********  Name: Mubashir Ali                                           ******** #
 # ********  Student ID: 500932569                                        ******** #
 # ********  Email: mian1.ali@ryerson.ca                                  ******** #
-# ********  Section: Descriptive Analysis                                ******** #
+# ********  Section: Model Selection                                     ******** #
 # ******************************************************************************* #
 
 # ***** Define training and testing datasets ***** #
