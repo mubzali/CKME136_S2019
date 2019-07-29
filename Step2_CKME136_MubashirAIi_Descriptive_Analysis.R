@@ -102,32 +102,6 @@ barplot(total_Delay_car/1000, lwd = 2, col = "aquamarine",
         xlab = "Carrier", ylab = "Total Delay in Mins (000's)", ylim = c(0,45000))
 
 
-# ------------------------------------------------------------------------------------------ #
-
-# ***** Delay by Origin ***** #
-
-total_orgArrDelay <- (tail(sort(tapply(data0708$ArrDelay, data0708$Origin, sum)),10))
-print(total_orgArrDelay)
-barplot(total_orgArrDelay/1000, lwd = 2, col = "cyan4",
-        main = "Total Arrival Delay by Origin",
-        xlab = "Carrier", ylab = "Total Arrival Delay in Min (000's)", ylim = c(0,15000))
-
-
-total_DepDelay_car <- (tail(sort(tapply(data0708$DepDelay, data0708$Carrier, sum)),20))
-print(total_Dep_Dly_car)
-barplot(total_Dep_Dly_car/1000, lwd = 2, col = "blue",
-        main = "Total Departure Delay by Carrier",
-        xlab = "Carrier", ylab = "Total Departure Delay in 000 Min", ylim = c(0,45000))
-
-total_Dly <- (tail(sort(tapply(Data0708$DepDelay, Data0708$Carrier, sum) + 
-                          tapply(Data0708$ArrDelay, Data0708$Carrier, sum)),20))
-print(total_Dly)
-barplot(total_Dly/1000, lwd = 2, col = "lightblue",
-        main = "Total Delay by Carrier",
-        xlab = "Carrier", ylab = "Total Delay in 000 Min", ylim = c(0,45000))
-
-# ------------------------------------------------------------------------------------------ #
-
 
 # ***** Delays more than 15 Minutes ***** #
 
